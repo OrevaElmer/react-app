@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+}
+.calculator{
+    border: 5px solid rgb(253, 75, 75);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    background: rgb(245, 158, 158);
+    box-shadow: 2px 4px 30px #111;
+}
+.calculator h3{
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.display{
+    padding: 20px 10px 10px 10px;
+    font-size: 25px;
+    text-align: right;
+    background: rgb(231, 204, 204);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 2px 2px 10px #111 ;
+    font-weight: bold;
+}
+.display span{
+    font-size: 17px;
+}
+button{
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.operators{
+    display: flex;
+    align-items: center;
+}
+.operators button{
+    flex: 1 1 100%;
+    background: rgb(119, 15, 15);
+    color: aliceblue;
+    box-shadow: 2px 2px 10px #111 ;
+}
+.digits{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.digits button{
+    flex: 1 1 33.3333%;
+    box-shadow: 2px 2px 10px #111 ;
+}
+.digits button:hover{
+    background: rgb(250, 179, 179);    
+}
+.operators button:hover{
+    background: rgb(184, 4, 4);    
+}
+.zero{
+    border-bottom-left-radius: 8px;
+}
+.equal{
+    border-bottom-right-radius: 8px;
+}
